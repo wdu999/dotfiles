@@ -35,6 +35,7 @@ if [[ "$OSTYPE"]] == "linux-gnu"* ]]; then
     echo "creat symlink to ~/.local/bin/nvim"
 
     rm ~/.local/bin/tree-sitter
+    ln -s $dir/bins_lin/tree-sitter ~/.local/bin/tree-sitter
     echo "creat symlink to ~/.local/bin/tree-sitter"
 
     # rm ~/.local/bin/ctags
