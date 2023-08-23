@@ -1,0 +1,11 @@
+{
+  "python.pythonPath": "C:\\Users\\weigd\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+  // "python.pythonPath": "/usr/local/bin/python3",
+  // "python.pythonPath": "/usr/local/bin/python3",
+  "pyright.inlayHints.functionReturnTypes": false,
+  "pyright.inlayHints.variableTypes": false
+  // "python.analysis.extraPaths": [
+  //   "/usr/local/lib/python3.11/site-packages",
+  //   "/Users/weidu/.local/share/nvim/mason/packages/debugpy/venv/lib/python3.11/site-packages"
+  // ]
+}
