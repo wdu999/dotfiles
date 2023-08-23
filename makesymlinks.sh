@@ -38,5 +38,9 @@ if [[ "$OSTYPE"]] == "linux-gnu"* ]]; then
     ln -s $dir/bins_lin/tree-sitter ~/.local/bin/tree-sitter
     echo "creat symlink to ~/.local/bin/tree-sitter"
 
+    rm ~/.local/bin/stylua
+    ln -s $dir/bins_lin/stylua ~/.local/bin/stylua
+    echo "creat symlink to ~/.local/bin/stylua"
+
     # rm ~/.local/bin/ctags
 fi
