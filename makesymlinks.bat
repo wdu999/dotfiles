@@ -3,9 +3,7 @@
 ::
 
 set bin_path=%userprofile%\dotfiles\bin_win
+setx PATH "%PATH%;%%bin_path%%;"
 
-echo ;%PATH; | find /C /I ";%%bin_path%%;" > nul
-if %ERRORLEVEL% NEQ 0 setx PATH "%PATH%;%%bin_path%%"
-
-del %appdata%\local\nvim
-mklink -d %appdata%\local\nvim %userprofile%\dotfiles\nvim
+del %userprofile%\AppData\local\nvim
+mklink -d %userprofile%\AppData\local\nvim %userprofile%\dotfiles\nvim
