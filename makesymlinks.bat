@@ -3,7 +3,7 @@
 ::
 
 set bin_path=%userprofile%\dotfiles\bin_win
-setx PATH "%PATH%;%%bin_path%%;"
+setx PATH "%PATH%;%bin_path%;"
 
 :: del will delete all the files in source folder
 :: rmdir only delete the symbolic link
