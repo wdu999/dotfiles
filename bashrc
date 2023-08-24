@@ -150,4 +150,4 @@ if ! shopt -oq posix; then
 fi
 
 # add nvim path for fvim
-PATH="$PATH:$HOME/GoogleDrive/config/wsl_ubuntu_nvim-linux64/bin"
+# PATH="$PATH:$HOME/GoogleDrive/config/wsl_ubuntu_nvim-linux64/bin"
