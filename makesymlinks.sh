@@ -14,7 +14,7 @@ ln -s $dir/nvim ~/.config/nvim
 
 echo ""
 
-files="vimrc zshrc tmux.conf tmux.conf.local"
+files="bashrc vimrc zshrc tmux.conf tmux.conf.local"
 
 for file in $files; do
     echo "rm $file from ~"
