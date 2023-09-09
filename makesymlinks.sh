@@ -14,7 +14,8 @@ ln -s $dir/nvim ~/.config/nvim
 
 echo ""
 
-files="bashrc vimrc zshrc tmux.conf tmux.conf.local"
+# files="bashrc vimrc zshrc tmux.conf tmux.conf.local"
+files="bashrc vimrc"
 
 for file in $files; do
     echo "rm $file from ~"
@@ -30,6 +31,19 @@ if [[ "$OSTYPE"]] == "linux-gnu"* ]]; then
     echo "linux"
     echo "-----"
     echo ""
+
+    mkdir -p ~/.local/bin
+    echo "create folders ~/.local/bin"
+
+    mkdir -p ~/.local/share/themes
+    echo "create folders ~/.local/share/themes"
+
+    mkdir -p ~/.local/share/icons
+    echo "create folders ~/.local/share/icons"
+
+    mkdir -p ~/.local/share/fonts
+    echo "create folders ~/.local/share/fonts"
+
     rm ~/.local/bin/nvim
     ln -s ~/Documents/nvim-linux64/bin/nvim ~/.local/bin/nvim
     echo "creat symlink to ~/.local/bin/nvim"
