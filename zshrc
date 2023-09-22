@@ -119,11 +119,11 @@ source $ZSH/oh-my-zsh.sh
 
 # bindkey -v  # enable vi mode
 
-alias ls='ls -G'
-alias ll='ls -alshF'
-alias la='ls -A'
-alias lh="ls -a | egrep '^\.'"
-alias l='ls -CF'
+alias ls='ls --color -G'
+alias ll='ls --color -alshF'
+alias la='ls --color -A'
+alias lh="ls --color -a | egrep '^\.'"
+alias l='ls --color -CF'
 
 alias f='find . | grep --color=auto '
 
