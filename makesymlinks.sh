@@ -6,10 +6,10 @@ cd $dir
 # if [[ "$OSTYPE"]] == "darwin"* ]]; then
 # fi
 
-if [ -d "~/.config/nvim"]; then
+# if [ -d "~/.config/nvim"]; then
     echo "rm -rf ~/.config/nvim"
     rm -rf ~/.config/nvim
-fi
+# fi
 
 echo "creat symlink to ~/.config/nvim"
 ln -s $dir/nvim ~/.config/nvim
@@ -21,10 +21,10 @@ files="bashrc vimrc"
 
 for file in $files; do
 
-    if [-a "~/.$file"]; then
+    # if [-a "~/.$file"]; then
         echo "rm $file from ~"
         rm ~/.$file
-    fi
+    # fi
     echo "creat symlink to $file"
     ln -s $dir/$file ~/.$file
     echo ""
@@ -37,43 +37,43 @@ if [[ "$OSTYPE"]] == "linux-gnu"* ]]; then
     echo "-----"
     echo ""
 
-    if [ ! -d "~/.local/bin"]; then
+    # if [ ! -d "~/.local/bin"]; then
         mkdir -p ~/.local/bin
         echo "create folders ~/.local/bin"
-    fi
+    # fi
 
-    if [ ! -d "~/.local/share/themes"]; then
+    # if [ ! -d "~/.local/share/themes"]; then
         mkdir -p ~/.local/share/themes
         echo "create folders ~/.local/share/themes"
-    fi
+    # fi
 
-    if [ ! -d "~/.local/share/icons"]; then
+    # if [ ! -d "~/.local/share/icons"]; then
         mkdir -p ~/.local/share/icons
         echo "create folders ~/.local/share/icons"
-    fi
+    # fi
 
-    if [ ! -d "~/.local/share/fonts"]; then
+    # if [ ! -d "~/.local/share/fonts"]; then
         mkdir -p ~/.local/share/fonts
         echo "create folders ~/.local/share/fonts"
-    fi
+    # fi
 
-    if [ -f "~/.local/bin/nvim"]; then
+    # if [ -f "~/.local/bin/nvim"]; then
         rm ~/.local/bin/nvim
-    fi
+    # fi
     ln -s ~/Documents/nvim-linux64/bin/nvim ~/.local/bin/nvim
     echo "creat symlink to ~/.local/bin/nvim"
 
-    if [ -f "~/.local/bin/tree-sitter"]; then
+    # if [ -f "~/.local/bin/tree-sitter"]; then
         rm ~/.local/bin/tree-sitter
-    fi
+    # fi
     ln -s $dir/bins_lin/tree-sitter ~/.local/bin/tree-sitter
     echo "creat symlink to ~/.local/bin/tree-sitter"
 
     chmod +x ~/.local/bin/tree-sitter
 
-    if [ -f "~/.local/bin/stylua"]; then
+    # if [ -f "~/.local/bin/stylua"]; then
         rm ~/.local/bin/stylua
-    fi
+    # fi
     ln -s $dir/bins_lin/stylua ~/.local/bin/stylua
     echo "creat symlink to ~/.local/bin/stylua"
 
