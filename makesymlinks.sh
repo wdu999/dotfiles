@@ -6,10 +6,10 @@ cd $dir
 # if [[ "$OSTYPE"]] == "darwin"* ]]; then
 # fi
 
-# if [ -d "~/.config/nvim"]; then
+if [ -d "~/.config/nvim"]; then
     echo "rm -rf ~/.config/nvim"
     rm -rf ~/.config/nvim
-# fi
+fi
 
 echo "creat symlink to ~/.config/nvim"
 ln -s $dir/nvim ~/.config/nvim
@@ -17,7 +17,7 @@ ln -s $dir/nvim ~/.config/nvim
 echo ""
 
 # files="bashrc vimrc zshrc tmux.conf tmux.conf.local"
-files="bashrc vimrc"
+files="vimrc"
 
 for file in $files; do
 
