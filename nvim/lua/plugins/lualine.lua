@@ -33,9 +33,9 @@ lualine_nightfly.command = {
 lualine.setup({
 	options = {
 		-- theme = lualine_nightfly,
-		theme = "everforest",
+		-- theme = "everforest",
 		-- theme = "ayu_dark",
-		-- theme = 'gruvbox',
+		theme = "gruvbox",
 		-- theme = 'gruvbox_dark',
 		-- theme = 'gruvbox_light',
 		-- theme = 'gruvbox_material',

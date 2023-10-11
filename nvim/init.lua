@@ -25,5 +25,6 @@ require("plugins.lsp")
 
 local cs
 -- cs = "spaceduck"
-cs = "everforest"
+-- cs = "everforest"
+cs = "gruvbox"
 vim.cmd("colorscheme " .. cs)
