@@ -558,7 +558,10 @@ map <silent> <leader><cr> :noh<cr>
 
 " nnoremap <leader>t :%s/\s\+$//<cr>:let @/=''<CR>  " strip trailing whitespace
 
-map <leader>bd :Bclose<cr>  " Close the current buffer
+map <leader><tab> :bn<cr>
+map <leader><s-tab> :bp<cr>
+map <leader>bd :bdelete<cr>  " Close the current buffer
+" map <leader>bd :Bclose<cr>  " Close the current buffer
 map <leader>ba :1,1000 bd!<cr>  " Close all the buffers
 
 " Opens a new tab with the current buffer's path Super useful when editing files in the same directory
@@ -588,12 +591,12 @@ nnoremap <leader>h :call ToggleHighlightLine()<CR>
 
 map <leader>c :TagbarToggle<CR>  " toggle Tagbar display
 
-map <leader>i :PlugInstall<CR> 
+map <leader>i :PlugInstall<CR>
 
 nnoremap ; :
 nnoremap <leader>q :qa!<CR>
 
-let g:rainbow_active = 1
+" let g:rainbow_active = 1
 
 augroup file_types
     autocmd!
