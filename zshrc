@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -169,7 +176,7 @@ alias ip="curl http://ipecho.net/plain; echo"
 
 alias path='echo; tr ":" "\n" <<< "$PATH"; echo;'
 
-alias bing='python3 /Users/weidu/My\ Drive\ \(wei.g.du@gmail.com\)/pg/python/bing/bing.py'
+alias bing='python3 /Users/v/My\ Drive/pg/python/bing/bing.py'
 
 # export TERM=xterm-256color
 
