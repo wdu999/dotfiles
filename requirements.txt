@@ -3,6 +3,7 @@ numpy
 pandas
 scipy
 scikit-learn
+ipykernel
 
 # data visualization
 matplotlib
