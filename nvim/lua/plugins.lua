@@ -171,6 +171,7 @@ return packer.startup(function(use)
 	-- python formatters
 	-- use({ "psf/black", branch = "stable" })
 
+	use { "nvim-neotest/nvim-nio" }
 	use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } })
 
 	-- Python-related text object
