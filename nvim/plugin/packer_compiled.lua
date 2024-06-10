@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\weigd\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\ayu-vim",
     url = "https://github.com/ayu-theme/ayu-vim"
   },
+  ["bamboo.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\weigd\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\bamboo.nvim",
+    url = "https://github.com/ribru17/bamboo.nvim"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "C:\\Users\\weigd\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\bufferline.nvim",
@@ -276,6 +281,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\weigd\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-nio"] = {
+    loaded = true,
+    path = "C:\\Users\\weigd\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-nio",
+    url = "https://github.com/nvim-neotest/nvim-nio"
+  },
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "C:\\Users\\weigd\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
@@ -454,7 +464,7 @@ _G.packer_plugins = {
     url = "https://github.com/folke/which-key.nvim"
   },
   ["whitespace.nvim"] = {
-    config = { "\27LJ\2\n§\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\22ignored_filetypes\1\4\0\0\20TelescopePrompt\fTrouble\thelp\1\0\2\22ignored_filetypes\0\14highlight\15DiffDelete\nsetup\20whitespace-nvim\frequire\0" },
+    config = { "\27LJ\2\n§\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\22ignored_filetypes\1\4\0\0\20TelescopePrompt\fTrouble\thelp\1\0\2\14highlight\15DiffDelete\22ignored_filetypes\0\nsetup\20whitespace-nvim\frequire\0" },
     loaded = true,
     path = "C:\\Users\\weigd\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\whitespace.nvim",
     url = "https://github.com/johnfrankmorgan/whitespace.nvim"
@@ -469,7 +479,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Runtimepath customization
 time([[Runtimepath customization]], true)
-vim.o.runtimepath = vim.o.runtimepath .. ",C:\\Users\\weigd\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\purify\\vim" .. ",C:\\Users\\weigd\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onehalf\\vim"
+vim.o.runtimepath = vim.o.runtimepath .. ",C:\\Users\\weigd\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onehalf\\vim" .. ",C:\\Users\\weigd\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\purify\\vim"
 time([[Runtimepath customization]], false)
 -- Setup for: markdown-preview.nvim
 time([[Setup for markdown-preview.nvim]], true)
@@ -477,7 +487,7 @@ try_loadstring("\27LJ\2\n=\0\0\2\0\4\0\0056\0\0\0009\0\1\0005\1\3\0=\1\2\0K\0\1\
 time([[Setup for markdown-preview.nvim]], false)
 -- Config for: whitespace.nvim
 time([[Config for whitespace.nvim]], true)
-try_loadstring("\27LJ\2\n§\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\22ignored_filetypes\1\4\0\0\20TelescopePrompt\fTrouble\thelp\1\0\2\22ignored_filetypes\0\14highlight\15DiffDelete\nsetup\20whitespace-nvim\frequire\0", "config", "whitespace.nvim")
+try_loadstring("\27LJ\2\n§\1\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\22ignored_filetypes\1\4\0\0\20TelescopePrompt\fTrouble\thelp\1\0\2\14highlight\15DiffDelete\22ignored_filetypes\0\nsetup\20whitespace-nvim\frequire\0", "config", "whitespace.nvim")
 time([[Config for whitespace.nvim]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
@@ -500,8 +510,8 @@ vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
 time([[Defining lazy-load filetype autocommands]], true)
-vim.cmd [[au FileType python ++once lua require("packer.load")({'vim-python-pep8-indent'}, { ft = "python" }, _G.packer_plugins)]]
 vim.cmd [[au FileType markdown ++once lua require("packer.load")({'markdown-preview.nvim'}, { ft = "markdown" }, _G.packer_plugins)]]
+vim.cmd [[au FileType python ++once lua require("packer.load")({'vim-python-pep8-indent'}, { ft = "python" }, _G.packer_plugins)]]
 time([[Defining lazy-load filetype autocommands]], false)
 vim.cmd("augroup END")
 

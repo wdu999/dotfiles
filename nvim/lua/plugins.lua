@@ -66,6 +66,7 @@ return packer.startup(function(use)
 	use({ "sonph/onehalf", rtp = "vim" })
 	use("jacoborus/tender.vim")
 	use({ "pineapplegiant/spaceduck", branch = "main" })
+	use("ribru17/bamboo.nvim")
 
 	use("p00f/nvim-ts-rainbow") -- works with treesitter
 	-- use('luochen1990/rainbow') -- rainbow parentheses, doesn't work when treesitter installed?
@@ -171,7 +172,7 @@ return packer.startup(function(use)
 	-- python formatters
 	-- use({ "psf/black", branch = "stable" })
 
-	use { "nvim-neotest/nvim-nio" }
+	use({ "nvim-neotest/nvim-nio" })
 	use({ "rcarriga/nvim-dap-ui", requires = { "mfussenegger/nvim-dap" } })
 
 	-- Python-related text object
